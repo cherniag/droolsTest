@@ -1,0 +1,9 @@
+package com.gc.drools;
+
+rule "account processing rule"
+
+when
+    $a : Account( balance > 100000 );
+then
+    $a.setBonus( 100 );
+end
